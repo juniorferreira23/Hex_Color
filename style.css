@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+}
+
+.title-rainbow {
+    font-size: 3em;
+    padding: 2.5em;
+}
+
+.content .subtitle {
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+.random-button {
+    border: none;
+    background: cadetblue;
+    padding: 20px 60px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#teste {
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% { 
+        color: red;
+    }
+
+    25% {
+        color: green;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(219, 219, 7);
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+.change-color {
+    background: tomato;
+}
